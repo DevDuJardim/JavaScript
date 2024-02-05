@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO 2</title>
+</head>
+<body>
+    <h1>Funcionário</h1>
+    <p>Insira os dados abaixo.</p>
+    <label for="nome">Nome do funcionário.</label>
+    <input type="text" name="nome" id="nome"><br>
+    <label for="salario">Salário do funcionário</label>
+    <input type="number" name="salario" id="salario"><br>
+    <input type="button" value="Entre" onclick="salario()">
+    <div id="res"></div>
+    <script>
+      function salario(){
+        var nome = document.getElementById("nome")
+        var nome = String(nome.value)
+        var salario = document.getElementById("salario")
+        var salario = Number(salario.value)
+        var res = document.getElementById("res")
+        res.innerHTML = `O funcionario ${nome.toUpperCase()} recebera R$ ${salario} de salario este mes <br/>`
+      }
+    </script>
+</body>
+</html>
