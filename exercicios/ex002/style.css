@@ -15,7 +15,7 @@ h1{
 
 main{
     background-color: rgb(180, 122, 235) ;
-    margin: 50px;
+    margin: 50px 250px;
     border-radius: 5px;
     border: solid black;
     box-shadow: 5px 5px 2px rgba(3, 10, 35, 0.32);
