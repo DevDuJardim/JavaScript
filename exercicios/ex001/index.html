@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EXERCICIO 1</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Exercicio 1</h1>
-    <label for="name">Qual é o seu nome? </label>
-    <input type="text" name="name" id="name">
-    <input type="button" value="enter" onclick="nome()">
-    <div id="res"></div>
+    <main id="conte">
+        <label class="nome" for="name">Qual é o seu nome? </label>
+        <input class="in" type="text" name="name" id="name">
+        <input class="botao" type="button" value="enter" onclick="nome()">
+        <div id="res"></div>
+    </main>
     <script>
         function nome(){
             var nome = window.document.getElementById("name")

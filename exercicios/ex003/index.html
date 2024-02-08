@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO 3</title>
+</head>
+<body>
+    <h1>Média do aluno</h1>
+    <p>Insira as notas do aluno para saber a média.</p>
+
+    <label for="nota1">Primeira nota: </label>
+    <input type="number" name="nota1" id="nota1"><br>
+
+    <label for="nota2">Segunda nota: </label>
+    <input type="number" name="nota2" id="nota2"><br>
+
+    <input type="button" value="media" onclick="media()">
+    <div id="res">Média!</div>
+
+    <script>
+        function media(){
+            var n1 = document.getElementById('nota1')
+            var n1 = Number(n1.value)
+            var n2 = document.getElementById('nota2')
+            var n2 = Number(n2.value)
+            var res = document.getElementById('res')
+            media = (n1 + n2) / 2
+            res.innerHTML = `A média do aluno é ${media}!`
+           }
+    </script>
+
+</body>
+</html>

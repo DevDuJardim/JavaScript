@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EXERCICIO 2</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Funcionário</h1>
-    <p>Insira os dados abaixo.</p>
-    <label for="nome">Nome do funcionário.</label>
-    <input type="text" name="nome" id="nome"><br>
-    <label for="salario">Salário do funcionário</label>
-    <input type="number" name="salario" id="salario"><br>
-    <input type="button" value="Entre" onclick="salario()">
-    <div id="res"></div>
+    <main>
+      <p>Insira os dados abaixo.</p>
+      <label class="info" for="nome">Nome do funcionário.</label>
+      <input class="enter" type="text" name="nome" id="nome"><br>
+      <label class="info" for="salario">Salário do funcionário <strong>R$</strong></label>
+      <input class="enter" type="number" name="salario" id="salario"><br>
+      <input id="botao" type="button" value="Entre" onclick="salario()">
+      <div id="res"></div>
+    </main>
     <script>
       function salario(){
         var nome = document.getElementById("nome")
