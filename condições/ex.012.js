@@ -1,4 +1,4 @@
-var idade = 35
+var idade = 12
 
 /*if (idade < 16){
     console.log('Não vota')

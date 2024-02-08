@@ -1,0 +1,7 @@
+var c = new Date()
+var data = c.getFullYear()
+var hora = c.getHours()
+var min = c.getMinutes()
+var sec = c.getSeconds()
+var mi = c.getTime()
+console.log(mi)
