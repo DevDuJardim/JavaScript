@@ -56,6 +56,10 @@ main p{
     text-decoration:underline;
 }
 
+#botao:hover{
+    background-color: aquamarine;
+}
+
 #res{
     margin-top: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
