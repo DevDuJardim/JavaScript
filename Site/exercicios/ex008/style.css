@@ -4,28 +4,30 @@
 }
 
 h1{
+    font-size: 2.5em;
     text-align: center;
-    font-size: 3em;
     margin-bottom: 65px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.399);
 }
 
 body{
-    background-color: #DB6A3B;
     font-family: 'Courier New', Courier, monospace;
+    background-color: #DB853B;
 }
 
 main{
-    background-color: #DBB23B;
-    height: 300px;
+    height: 250px;
     width: 500px;
+    background-color: #DB4E3B;
     margin: auto;
-    padding: 15px;
+    font-size: 1.3em;
+    padding: 10px;
     border-radius: 5px;
-    font-size: 1.5em;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.41);
 }
 
 .entry{
-    width: 50px;
+    width: 65px;
     height: 25px;
     border-radius: 5px;
     border: 1px solid black;
@@ -33,12 +35,17 @@ main{
 }
 
 .botao{
-    width: 50px;
-    height: 27px;
     border-radius: 5px;
     border: 1px solid black;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.botao:hover{
+    background-color: #DBAD84;
 }
 
 #res{
     margin-top: 10px;
+
 }

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCÍCIO 8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Conversor de distancias</h1>
+    <main>
+        <label for="metros">Digite uma distancia em metros: </label>
+        <input class="entry" type="number" name="num" id="num"> <br>
+        <input class="botao" type="button" value="Converter" onclick="converter()">
+        <div id="res"></div>
+    </main>
+
+    <script>
+        function converter(){
+            var num = document.getElementById('num')
+            var num = Number(num.value)
+            km = num / 1000
+            hm = num / 100
+            dam = num / 10
+            dm = num * 10
+            cm = num * 100
+            mm = num * 1000
+            res.innerHTML = `KM - <strong>${km}</strong> <br/> HM - <strong>${hm}</strong> <br/>
+            DAM - <strong>${dam}</strong><br/> DM - <strong>${dm}</strong><br/> CM - <strong>${cm}</strong><br/>
+            MM - <strong>${mm}</strong>`
+        }
+    </script>
+</body>
+</html>
