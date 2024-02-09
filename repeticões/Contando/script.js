@@ -21,17 +21,17 @@ function contar(){
             //contagem crescente
             for(var c = inicio; c <= fim; c+= passo){
                 cont.innerHTML += `${c} \u{1f449}`
-            } 
-         } else{ 
+            }
+         } else{
                 //contagem regressiva
                 for(var c = inicio; c >= fim; c-= passo){
                     cont.innerHTML += `${c} \u{1f449}`
                 }
         }
-      
+
         cont.innerHTML += `\u{1f3c1}`
     }
-   
+
 
 
 }

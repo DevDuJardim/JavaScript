@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCÍCIO 7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Dobro e Terça Parte</h1>
+    <main>
+        <label for="num">Digite um numero: </label>
+        <input class="entry" type="number" name="num" id="num">
+        <input class="botao" type="button" value="ver" onclick="ver()">
+        <div id="res"></div>
+    </main>
+    <script>
+        function ver(){
+            var num = document.getElementById('num')
+            var num = Number(num.value)
+            dobro = num * 2
+            terca = num / 3
+            res.innerHTML = `O dobro de <strong>${num}</strong> é <strong>${dobro}</strong> <br/>A terça parte de <strong>${num}</strong> é <strong>${terca}</strong>`
+        }
+    </script>
+</body>
+</html>

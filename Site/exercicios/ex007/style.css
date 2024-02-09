@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 65px;
+}
+
+body{
+    background-color: #DB6A3B;
+}
+
+main{
+    background-color: #DBB23B;
+    height: 300px;
+    width: 500px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.5em;
+}
+
+.entry{
+    width: 50px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.botao{
+    width: 50px;
+    height: 27px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#res{
+    margin-top: 10px;
+}

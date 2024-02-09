@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCÍCIO 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <h1>Antecessor e sucessor</h1>
+    <main>
+        <label for="numero">Digite um numero: </label>
+        <input class="entry" type="number" id="numero"> <br>
+        <input class="botao" type="button" value="Ver" onclick="ver()">
+        <div id="res"></div>
+    </main>
+
+    <script>
+            function ver(){
+            var num = document.getElementById('numero')
+            var num = Number(num.value)
+            suc = num + 1
+            ant = num - 1
+            res.innerHTML = `O antecessor de <strong>${num}</strong> é <strong>${ant}</strong> <br/>O sucessor de <strong>${num}</strong> é <strong>${suc}</strong>`
+            }
+    </script>
+</body>
+</html>
