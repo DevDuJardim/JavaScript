@@ -21,14 +21,36 @@
         h1{
             text-align: center;
         }
+
+        main{
+            margin: auto;
+            border-radius: 5px;
+            background-color: #389651;
+            height: 300px;
+            width: 500px;
+        }
+        .int{
+            margin: 10px 10px;
+            border-radius: 5px;
+        }
+        .botao{
+            margin: 10px 10px;
+            border-radius: 5px;
+        }
+
+        #res{
+           margin-left: 10px;
+        }
     </style>
 </head>
 <body>
     <h1>Somando Valores</h1>
-    <input type="number" name="txtn1" id="txtn1">
-    <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="somar" onclick="somar()">
-    <div id="res">Resultado</div>
+    <main>
+        <input class="int" type="number" name="txtn1" id="txtn1">
+        <input class="int" type="number" name="txtn2" id="txtn2"><br>
+        <input class="botao" type="button" value="somar" onclick="somar()">
+        <div id="res">Resultado</div>
+    </main>
     <script>
         function somar(){
             var tn1 = window.document.getElementById('txtn1')

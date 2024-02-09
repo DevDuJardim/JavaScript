@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Exercícios</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ex.js">
+</head>
+<body>
+    <header>
+        <h2>Exercícios</h2>
+        <nav>
+            <a href="#">Condicões</a>
+            <a href="#">Repeticões</a>
+        </nav>
+    </header>
+    <hr>
+     <main>
+        <section class="section">
+            <div class="ex" id="ex1"></div>
+
+            <div class="ex" id="ex2">
+                <label class="nome" for="name">Qual é o seu nome? </label>
+                <input class="in" type="text" name="name" id="name">
+                <input class="botao" type="button" value="enter" onclick="nome()">
+                <div id="res"></div>
+            </div>
+
+            <div class="ex" id="ex3">
+                <p>Insira os dados abaixo.</p>
+                <label class="info" for="nome">Nome do funcionário.</label>
+                <input class="enter" type="text" name="nome" id="nome"><br>
+                <label class="info" for="salario">Salário do funcionário <strong>R$</strong></label>
+                <input class="enter" type="number" name="salario" id="salario"><br>
+                <input id="botao" type="button" value="Entre" onclick="salario()">
+                <div id="res2"></div>
+            </div>
+            <div class="ex" id="ex4">
+                <p>Insira as notas do aluno para saber a média.</p>
+                <label class="indi" for="nota1">Primeira nota: </label>
+                <input class="entry" type="number" name="nota1" id="nota1"><br>
+                <label class="indi" for="nota2">Segunda nota: </label>
+                <input class="entry" type="number" name="nota2" id="nota2"><br>
+                <input id="botao" type="button" value="Calcular" onclick="media()">
+                <div id="res3"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="ex.js"></script>
+</body>
+</html>

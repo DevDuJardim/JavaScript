@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+*{
+    padding:0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #00A347;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: #00E764;
+}
+
+hr{
+    border: 2px solid black;
+}
+
+.section{
+    display: flex;
+    justify-content: space-around;
+}
+
+.ex{
+    background-color: #008138;
+    font-size: 1.5em;
+    padding: 10px;
+    margin-top: 10px;
+    height: 300px;
+    width: 300px;
+    border-radius: 3px;
+}
