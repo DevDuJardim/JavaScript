@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCÍCIO 9</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Conversor de Moedas</h1>
+
+    <main>
+        <label for="moeda">Digite o valor em Reais R$ </label>
+        <input class="entry" type="number" name="moeda" id="moeda"> <br>
+        <input class="botao" type="button" value="converter" onclick="converter()">
+        <div id="res"></div>
+    </main>
+    <script>
+        function converter(){
+            var real = document.getElementById('moeda')
+            var real = Number(real.value)
+            doll = real / 4.95
+            res.innerHTML = `Com R$ ${real.toFixed(2)} você tera apenas U$ ${doll.toFixed(2)}`
+        }
+    </script>
+</body>
+</html>
