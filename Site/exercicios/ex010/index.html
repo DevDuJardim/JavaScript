@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCÍCIO 10</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pintura de parede</h1>
+    <main>
+        <label for="altura">Digite a <strong>altura</strong> da parede: </label><br>
+        <input class="entry" type="number" name="altura" id="altura"> <br>
+        <label for="largura">Digite a <strong>largura</strong> da parede: </label><br>
+        <input class="entry" type="number" name="largura " id="largura"><br>
+        <input class="botao" type="button" value="calcular" onclick="calcular()">
+        <div id="res"></div>
+    </main>
+    <script>
+        function calcular(){
+            var altura = document.getElementById('altura')
+            var altura = Number(altura.value)
+            var largura = document.getElementById('largura')
+            var largura = Number(largura.value)
+            area = altura * largura
+            res.innerHTML = `A área calculada é  de ${area.toFixed(2)} metros quadrados.<br/>
+            Serão gastos ${(area / 2).toFixed(2)} lirtros de tinta.`
+        }
+    </script>
+</body>
+</html>
